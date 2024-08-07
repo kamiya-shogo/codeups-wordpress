@@ -48,3 +48,4 @@
 # CodeUps-for-WordPress
 # codeups-wordpress
 # codeups-new-wordpress
+# codeups-new-wordpress
