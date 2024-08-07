@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.page-blog-wrap {
+  @include mq("md") {
+    display: flex;
+  }
+}
+
+.page-blog-wrap__main {
+  @include mq("md") {
+    width: 65.371%;
+  }
+}
+
+.page-blog-wrap__cards {
+  padding: 0 rem(6);
+
+  @include mq("md") {
+    padding: 0;
+  }
+}
+
+.page-blog-wrap__pagenavi {
+  margin-top: rem(80);
+}
+
+.page-blog-wrap__sidebar {
+  margin-top: rem(80);
+  padding: 0 rem(25);
+
+  @include mq("md") {
+    width: 27.223%;
+    margin-left: rem(80);
+    margin-top: 0;
+    padding: 0;
+  }
+}

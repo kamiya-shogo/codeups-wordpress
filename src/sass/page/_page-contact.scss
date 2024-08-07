@@ -1,0 +1,44 @@
+@use "global" as *;
+
+.page-contact__inner.inner {
+  max-width: rem(740);
+}
+
+.page-contact__title {
+}
+.page-contact__text {
+  font-size: rem(20);
+  text-align: center;
+}
+.page-contact__list {
+  margin-top: rem(30);
+  background-color: $black;
+}
+.page-contact__item {
+  display: flex;
+  width: 100%;
+}
+.page-contact__term {
+  padding: rem(10);
+  width: 40%;
+  background-color: $white;
+}
+
+.page-contact__definition {
+  width: 60%;
+  padding: rem(10);
+  background-color: $white;
+}
+
+.page-contact__buttons {
+  display: flex;
+  justify-content: center;
+  font-size: rem(18);
+  margin-top: rem(20);
+}
+.contact__back-button {
+
+}
+.contact__submit-input {
+
+}

@@ -1,0 +1,44 @@
+@use "global" as *;
+
+.page-about-modal {
+  @include mq("md") {
+    padding: rem(91) 0;
+    background: rgba(32, 32, 32, 0.8);
+  }
+}
+
+.page-about-modal__inner {
+  @include mq("md") {
+    margin: auto;
+    padding: 0 rem(20);
+    max-width: rem(1000);
+    width: 100%;
+  }
+}
+
+.page-about-modal__img {
+  @include mq("md") {
+    width: 63.8%;
+    height: 76.3%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.page-about-modal img {
+  @include mq("md") {
+    aspect-ratio: 920/586;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.page-about-modal__img:nth-of-type(6n + 1) img,
+.page-about-modal__img:nth-of-type(6n + 6) img {
+  @include mq("md") {
+    aspect-ratio: 492/746;
+  }
+}

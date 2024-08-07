@@ -1,0 +1,64 @@
+@use "../global" as *;
+
+.page-pagenavi .wp-pagenavi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clear: both;
+  text-align: center;
+}
+
+.page-pagenavi .wp-pagenavi a,
+.page-pagenavi .wp-pagenavi span {
+  width: rem(38);
+  height: rem(38);
+  color: $green;
+  margin: 0 rem(6);
+  padding: rem(7) 0;
+  font-family: $third-font;
+  font-size: rem(16);
+  font-weight: $bold;
+  white-space: nowrap;
+  border: 1px solid $green;
+  transition: 0.3s;
+}
+
+.page-pagenavi .wp-pagenavi a:first-child,
+.page-pagenavi .wp-pagenavi a:last-child {
+  margin: 0;
+}
+
+.page-pagenavi .wp-pagenavi a:first-child {
+  margin-right: rem(40);
+}
+
+.page-pagenavi .wp-pagenavi a:last-child {
+  margin-left: rem(40);
+}
+
+.page-pagenavi .wp-pagenavi a:first-child,
+.page-pagenavi .wp-pagenavi a:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.page-pagenavi .wp-pagenavi a:first-child:hover::before,
+.page-pagenavi .wp-pagenavi a:last-child:hover::after {
+  border-top: 1px solid $white;
+  border-left: 1px solid $white;
+}
+
+.page-pagenavi .wp-pagenavi a:hover {
+  color: $white;
+  background-color: $green;
+  border-color: $green;
+  opacity: 1;
+}
+
+.page-pagenavi .wp-pagenavi .current {
+  color: $white;
+  background-color: $green;
+  border-color: $green;
+}

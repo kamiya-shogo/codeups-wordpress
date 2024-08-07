@@ -1,0 +1,7 @@
+@use "global" as *;
+
+.single-blog__inner {
+  @include mq("md") {
+    display: flex;
+  }
+}

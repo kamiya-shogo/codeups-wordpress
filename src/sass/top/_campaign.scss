@@ -1,0 +1,91 @@
+@use "global" as *;
+
+.campaign {
+  overflow: hidden;
+}
+
+.campaign__inner {
+  position: relative;
+}
+
+.campaign__swiper {
+  margin-top: rem(31);
+  margin-right: calc(50% - 50vw);
+  padding-bottom: rem(10);
+
+  @include mq("md") {
+    margin-top: rem(43);
+  }
+}
+
+.campaign__cards {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.campaign__card {
+  width: rem(280);
+
+  @include mq("md") {
+    width: rem(333);
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  height: rem(80);
+  width: rem(80);
+  transition: opacity 0.3s;
+}
+
+.swiper-button-prev {
+  top: 23px;
+  left: 76.82%;
+}
+
+.swiper-button-next {
+  top: 23px;
+  right: 1.8%;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  opacity: 0.7;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: rem(80);
+  margin: auto;
+  width: rem(80);
+  display: none;
+
+  @include mq("md") {
+    display: block;
+  }
+}
+
+.swiper-button-prev::after {
+  background-image: url(../images/common/campaign-prev.svg);
+}
+
+.swiper-button-next::after {
+  background-image: url(../images/common/campaign-next.svg);
+}
+
+.swiper-slide img {
+  height: auto;
+  width: 100%;
+}
+
+.campaign__btn {
+  text-align: center;
+  margin-top: rem(30);
+
+  @include mq("md") {
+    margin-top: rem(70);
+  }
+}
