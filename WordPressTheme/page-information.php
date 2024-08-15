@@ -2,19 +2,7 @@
 
 
 <!-- メインビュー -->
-<div class="page-mv js-page-mv">
-  <div class="page-mv__inner">
-    <div class="page-mv__img">
-      <picture>
-        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/information/page-information-mv.jpg" media="(min-width: 768px)">
-        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/information/page-information-sp-mv.jpg" alt="海の中の大きなの岩の側で小さな黄色な魚の群れと人が泳いでいる様子">
-      </picture>
-    </div>
-    <div class="page-mv__content">
-      <h1 class="page-mv__title">information</h1>
-    </div>
-  </div>
-</div>
+<?php get_template_part('parts/fv'); ?>
 
 <!-- パンぐずりスト -->
 <?php get_template_part('parts/breadcrumb'); ?>

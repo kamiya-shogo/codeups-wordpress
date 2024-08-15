@@ -21,14 +21,14 @@
   top: 39%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url(../images/page/404-sp-icon.png);
+  background-image: url(../images/404/404-sp-icon.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  z-index: -1;
+  z-index: 1;
 
   @include mq("md") {
-    background-image: url(../images/page/404-icon.png);
+    background-image: url(../images/404/404-icon.png);
     width: rem(760);
     height: rem(700);
     top: 51%;
@@ -38,6 +38,8 @@
 }
 
 .page-404__body {
+  position: relative;
+  z-index: 2;
   text-align: center;
 }
 

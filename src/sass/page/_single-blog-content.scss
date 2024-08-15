@@ -1,6 +1,5 @@
 @use "global" as *;
 
-
 .single-blog-content__meta {
   display: flex;
   align-items: center;
@@ -138,7 +137,6 @@
   transition: 0.3s;
 }
 
-
 .single-blog-content__prev-next a:first-child,
 .single-blog-content__prev-next a:last-child {
   margin: 0;
@@ -168,7 +166,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 
 .single-blog-content__prev-next a:hover {
   color: $white;

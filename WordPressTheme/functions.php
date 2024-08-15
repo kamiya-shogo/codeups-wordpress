@@ -109,3 +109,11 @@ SCF::add_options_page(
 	'dashicons-format-faq',
 	7
 );
+
+//ブログページのbodyタグに付与されるクラス名の削除
+function remove_body_classes($classes) {
+    $remove_classes = array('blog');
+    $classes = array_diff($classes, $remove_classes);
+    return $classes;
+}
+add_filter('body_class', 'remove_body_classes');

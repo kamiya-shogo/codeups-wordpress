@@ -1,18 +1,6 @@
 <?php get_header(); ?>
 <!-- メインビュー -->
-<div class="  page-mv js-page-mv">
-  <div class="page-mv__inner">
-    <div class="page-mv__img">
-      <picture>
-        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/blog/page-blog-mv.jpg" media="(min-width: 768px)">
-        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/blog/page-blog-sp-mv.jpg" alt="透き通る海の中を小さな魚の群れが泳いている様子">
-      </picture>
-    </div>
-    <div class="page-mv__content">
-      <h1 class="page-mv__title">blog</h1>
-    </div>
-  </div>
-</div>
+<?php get_template_part('parts/fv'); ?>
 
 <!-- パンぐずりスト -->
 <?php get_template_part('parts/breadcrumb'); ?>
@@ -62,22 +50,17 @@
                 <div class='single-blog-content__prev-next'>
                   <?php
                   $prev = get_previous_post();
-                  if (!empty($prev)) {
-                    $prev_url = esc_url(get_permalink($prev->ID));
-                    // $prev_url = $prev ? get_permalink($prev->ID) : '#';
-                  }
+                  $prev_url = esc_url(get_permalink($prev->ID));
                   $next = get_next_post();
-                  if (!empty($next)) {
-                    $next_url = esc_url(get_permalink($next->ID));
-                    // $next_url = $next ? get_permalink($next->ID) : '#';
-                  }
+                  $next_url = esc_url(get_permalink($next->ID));
                   ?>
+
                   <?php if (!empty($prev)) : ?>
                     <a class="previouspostslink" rel="prev" href="<?php echo $prev_url; ?>"></a>
                   <?php endif; ?>
+
                   <?php if (!empty($next)) : ?>
                     <a class="nextpostslink" rel="next" href="<?php echo $next_url; ?>"></a>
-                    <?php elsif: ?>
                   <?php endif; ?>
                 </div>
               </div>

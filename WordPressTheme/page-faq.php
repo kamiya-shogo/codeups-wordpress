@@ -1,18 +1,6 @@
 <?php get_header(); ?>
 <!-- メインビュー -->
-<div class="page-mv js-page-mv">
-  <div class="page-mv__inner">
-    <div class="page-mv__img">
-      <picture>
-        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/faq/page-faq-mv.jpg" media="(min-width: 768px)">
-        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/faq/page-faq-sp-mv.jpg" alt="青空と綺麗な海の砂浜に人がいる様子">
-      </picture>
-    </div>
-    <div class="page-mv__content">
-      <h1 class="page-mv__title page-mv__title--uppercase">faq</h1>
-    </div>
-  </div>
-</div>
+<?php get_template_part('parts/fv'); ?>
 
 <!-- パンぐずりスト -->
 <?php get_template_part('parts/breadcrumb'); ?>

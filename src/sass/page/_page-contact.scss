@@ -11,23 +11,26 @@
   text-align: center;
 }
 .page-contact__list {
-  margin-top: rem(30);
-  background-color: $black;
+  border-top: 1px solid $black;
+  border-right: 1px solid $black;
+  border-left: 1px solid $black;
+  margin-top: rem(60);
 }
 .page-contact__item {
   display: flex;
   width: 100%;
+  border-bottom: 1px solid $black;
 }
 .page-contact__term {
-  padding: rem(10);
-  width: 40%;
-  background-color: $white;
+  padding: rem(24) rem(10);
+  width: 30%;
+  background-color: $green2;
 }
 
 .page-contact__definition {
-  width: 60%;
-  padding: rem(10);
-  background-color: $white;
+  width: 70%;
+  padding: rem(24) rem(10);
+  border-left: 1px solid $black;
 }
 
 .page-contact__buttons {
@@ -41,4 +44,8 @@
 }
 .contact__submit-input {
 
+}
+
+.wpcf7-form-control .contact__back-button {
+  display: inline-block;
 }

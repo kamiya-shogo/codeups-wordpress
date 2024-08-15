@@ -65,8 +65,15 @@
   padding-right: rem(53);
 }
 
+.button.button--send {
+  padding: 0;
+}
+
 .button.button--send span {
   padding-right: rem(56);
+  position: absolute;
+  top: 45%;
+  right: 25%;
 }
 
 .button.button--contactus span {

@@ -1,19 +1,7 @@
 <?php get_header(); ?>
 
 <!-- メインビュー -->
-<div class="page-mv js-page-mv">
-  <div class="page-mv__inner">
-    <div class="page-mv__img">
-      <picture>
-        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/about/page-about-mv.jpg" media="(min-width: 768px)">
-        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/about/page-about-sp-mv.jpg" alt="青い空とシーサーの写真">
-      </picture>
-    </div>
-    <div class="page-mv__content">
-      <h1 class="page-mv__title">about us</h1>
-    </div>
-  </div>
-</div>
+<?php get_template_part('parts/fv'); ?>
 
 <!-- パンぐずりスト -->
 <?php get_template_part('parts/breadcrumb'); ?>

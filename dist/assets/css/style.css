@@ -148,6 +148,7 @@ a {
 
 .body-error-404 {
 	background-color: #408F95;
+	padding-top: 5.625rem;
 }
 
 .breadcrumb-margin {
@@ -161,21 +162,21 @@ a {
 	width: 100%;
 }
 
-.breadcrumb span {
+.breadcrumb__inner {
 	color: #0D2936;
 	font-size: 0.875rem;
 	font-weight: 400;
 }
 
-.breadcrumb .current-item {
-	color: #0D2936;
-}
-
-.breadcrumb.breadcrumb--white span {
+.breadcrumb__inner.breadcrumb__inner--white {
 	color: #fff;
 }
 
-.breadcrumb.breadcrumb--white .current-item {
+.breadcrumb__inner .current-item {
+	color: #0D2936;
+}
+
+.breadcrumb__inner.breadcrumb__inner--white .current-item {
 	color: #fff;
 }
 
@@ -204,7 +205,7 @@ a {
 }
 
 .page-404__inner::after {
-	background-image: url(../images/page/404-sp-icon.png);
+	background-image: url(../images/404/404-sp-icon.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -215,11 +216,13 @@ a {
 	top: 39%;
 	transform: translate(-50%, -50%);
 	width: 20.5526875rem;
-	z-index: -1;
+	z-index: 1;
 }
 
 .page-404__body {
+	position: relative;
 	text-align: center;
+	z-index: 2;
 }
 
 .page-404__title {
@@ -389,25 +392,28 @@ a {
 }
 
 .page-contact__list {
-	background-color: #0D2936;
-	margin-top: 1.875rem;
+	border-left: 1px solid #0D2936;
+	border-right: 1px solid #0D2936;
+	border-top: 1px solid #0D2936;
+	margin-top: 3.75rem;
 }
 
 .page-contact__item {
+	border-bottom: 1px solid #0D2936;
 	display: flex;
 	width: 100%;
 }
 
 .page-contact__term {
-	background-color: #fff;
-	padding: 0.625rem;
-	width: 40%;
+	background-color: #DDF0F1;
+	padding: 1.5rem 0.625rem;
+	width: 30%;
 }
 
 .page-contact__definition {
-	background-color: #fff;
-	padding: 0.625rem;
-	width: 60%;
+	border-left: 1px solid #0D2936;
+	padding: 1.5rem 0.625rem;
+	width: 70%;
 }
 
 .page-contact__buttons {
@@ -415,6 +421,10 @@ a {
 	font-size: 1.125rem;
 	justify-content: center;
 	margin-top: 1.25rem;
+}
+
+.wpcf7-form-control .contact__back-button {
+	display: inline-block;
 }
 
 .page-faq-list__item + .page-faq-list__item {
@@ -575,13 +585,11 @@ a {
 	text-align: center;
 }
 
-.page-mv__title::first-letter,
-.page-mv__title.page-mv__title--uppercase,
-.page-mv__title .page-mv__title-uppercase {
+.page-mv__title::first-letter {
 	text-transform: uppercase;
 }
 
-.page-mv__title .page-mv__title-capitalize {
+.page-mv__title.page-mv__title--capitalize {
 	text-transform: capitalize;
 }
 
@@ -1493,8 +1501,15 @@ a {
 	padding-right: 3.3125rem;
 }
 
+.button.button--send {
+	padding: 0;
+}
+
 .button.button--send span {
 	padding-right: 3.5rem;
+	position: absolute;
+	right: 25%;
+	top: 45%;
 }
 
 .button.button--contactus span {
@@ -2864,7 +2879,9 @@ main {
 	background-image: none;
 	border: none;
 	border-radius: 0;
+	display: block;
 	padding: 0;
+	padding: 1.1875rem 7.375rem 1.1875rem 3.125rem;
 	text-decoration: none;
 }
 
@@ -3007,7 +3024,7 @@ html {
 }
 
 .page-404__inner::after {
-	background-image: url(../images/page/404-icon.png);
+	background-image: url(../images/404/404-icon.png);
 	height: 43.75rem;
 	left: -1%;
 	top: 51%;

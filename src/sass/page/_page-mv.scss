@@ -49,12 +49,10 @@
   }
 }
 
-.page-mv__title::first-letter,
-.page-mv__title.page-mv__title--uppercase,
-.page-mv__title .page-mv__title-uppercase {
+.page-mv__title::first-letter {
   text-transform: uppercase;
 }
 
-.page-mv__title .page-mv__title-capitalize {
+.page-mv__title.page-mv__title--capitalize {
   text-transform: capitalize;
 }

@@ -12,7 +12,11 @@
   <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<?php
+$body_class = is_404() ? 'body-error-404' : '';
+?>
+
+<body <?php body_class($body_class); ?>>
   <?php wp_body_open(); ?>
 
   <header class="header layout-header js-header">

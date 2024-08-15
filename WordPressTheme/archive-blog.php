@@ -1,34 +1,9 @@
 <?php get_header(); ?>
 <!-- メインビュー -->
-<div class="page-mv js-page-mv">
-  <div class="page-mv__inner">
-    <div class="page-mv__img">
-      <picture>
-        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/blog/page-blog-mv.jpg" media="(min-width: 768px)">
-        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/blog/page-blog-sp-mv.jpg" alt="透き通る海の中を小さな魚の群れが泳いている様子">
-      </picture>
-    </div>
-    <div class="page-mv__content">
-      <h1 class="page-mv__title">blog</h1>
-    </div>
-  </div>
-</div>
+<?php get_template_part('parts/fv'); ?>
 
 <!-- パンぐずりスト -->
 <?php get_template_part('parts/breadcrumb'); ?>
-<!-- <div class="breadcrumb breadcrumb-margin"> -->
-<!-- <div class="breadcrumb__inner">
-    <span>
-      <a href="index.html">
-        <span>TOP</span>
-      </a>
-    </span>
-    &nbsp;&gt;&nbsp;
-    <span>
-      <span class="current-item">ブログ一覧</span>
-    </span>
-  </div>
-</div> -->
 
 <section class="archive-blog layout-page-margin">
   <div class="archive-blog__inner inner page-body-icon page-blog-wrap">

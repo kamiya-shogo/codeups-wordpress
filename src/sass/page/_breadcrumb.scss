@@ -12,20 +12,20 @@
   }
 }
 
-.breadcrumb span {
-  color: $black;
+.breadcrumb__inner {
   font-size: rem(14);
   font-weight: $normal;
-}
-
-.breadcrumb .current-item {
   color: $black;
 }
 
-.breadcrumb.breadcrumb--white span {
+.breadcrumb__inner.breadcrumb__inner--white {
   color: $white;
 }
 
-.breadcrumb.breadcrumb--white .current-item {
+.breadcrumb__inner .current-item {
+  color: $black;
+}
+
+.breadcrumb__inner.breadcrumb__inner--white .current-item {
   color: $white;
 }

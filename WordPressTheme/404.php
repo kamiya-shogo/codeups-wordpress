@@ -1,4 +1,8 @@
 <?php get_header(); ?>
+
+<!-- パンぐずりスト -->
+<?php get_template_part('parts/breadcrumb', null, array('class' => 'breadcrumb__inner--white')); ?>
+
 <div class="page-404">
   <div class="page-404__inner inner">
     <div class="page-404__body">
