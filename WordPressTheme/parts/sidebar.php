@@ -121,7 +121,6 @@
       <h2 class="page-sidebar__title page-sidebar-title">アーカイブ</h2>
       <div class="page-sidebar__archive-list">
         <div class="page-sidebar__archive-item">
-          <!-- <p class="page-sidebar__archive-year is-open js-page-sidebar-archive">2023</p> -->
           <ul class="page-sidebar__archive-date-wrap js-toggle">
             <div class="page-sidebar__archive-list">
               <?php

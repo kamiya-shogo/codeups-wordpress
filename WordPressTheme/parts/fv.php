@@ -74,7 +74,7 @@ if (is_page('campaign') || is_post_type_archive('campaign') || is_tax('campaign_
         </div>
         <div class="page-mv__content">
             <?php if ($page === 'faq'): ?>
-                <h1 class="page-mv__title page-mv__title--capitalize"><?php echo esc_html($title); ?></h1>
+                <h1 class="page-mv__title page-mv__title--uppercase"><?php echo esc_html($title); ?></h1>
             <?php else: ?>
                 <h1 class="page-mv__title"><?php echo nl2br(esc_html($title)); ?></h1>
             <?php endif; ?>

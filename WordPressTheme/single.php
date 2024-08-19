@@ -5,10 +5,10 @@
 <!-- パンぐずりスト -->
 <?php get_template_part('parts/breadcrumb'); ?>
 
+
 <?php if (have_posts()) : ?>
 
   <?php while (have_posts()) : the_post(); ?>
-
 
 
     <section class="single-blog layout-page-margin">
@@ -47,20 +47,21 @@
 
             <div class="single-blog-content__pagenavi">
               <div class="single-blog-content__inner">
-                <div class='single-blog-content__prev-next'>
-                  <?php
-                  $prev = get_previous_post();
-                  $prev_url = esc_url(get_permalink($prev->ID));
-                  $next = get_next_post();
-                  $next_url = esc_url(get_permalink($next->ID));
-                  ?>
+                <?php
+                $prev = get_previous_post();
+                $next = get_next_post();
 
-                  <?php if (!empty($prev)) : ?>
-                    <a class="previouspostslink" rel="prev" href="<?php echo $prev_url; ?>"></a>
+                $prev_url = $prev ? get_permalink($prev->ID) : '';
+                $next_url = $next ? get_permalink($next->ID) : '';
+                ?>
+
+                <div class='single-blog-content__prev-next'>
+                  <?php if ($next) : ?>
+                    <a class="nextpostslink next" rel="next" href="<?php echo esc_url($next_url); ?>"></a>
                   <?php endif; ?>
 
-                  <?php if (!empty($next)) : ?>
-                    <a class="nextpostslink" rel="next" href="<?php echo $next_url; ?>"></a>
+                  <?php if ($prev) : ?>
+                    <a class="previouspostslink prev" rel="prev" href="<?php echo esc_url($prev_url); ?>"></a>
                   <?php endif; ?>
                 </div>
               </div>

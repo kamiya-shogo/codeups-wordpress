@@ -179,13 +179,11 @@ $(".js-modal-close").on("click", function () {
 });
 
 //サイドバー アーカイブ
-$(function(){
-  // 最新の年だけを表示する
-  $('.js-page-sidebar-archive.is-open').next().show();
-
-  $('.js-page-sidebar-archive').on('click', function () {
-    $(this).next().slideToggle();
-    $(this).toggleClass('is-open');
+  $(function () {
+    // 最新の年だけを表示する
+    $('.js-page-sidebar-archive.is-open').next().show();
+    $('.js-page-sidebar-archive').on('click', function () {
+      $(this).next().slideToggle();
+      $(this).toggleClass('is-open');
+    });
   });
-});
-});

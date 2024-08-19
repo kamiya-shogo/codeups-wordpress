@@ -589,8 +589,8 @@ a {
 	text-transform: uppercase;
 }
 
-.page-mv__title.page-mv__title--capitalize {
-	text-transform: capitalize;
+.page-mv__title.page-mv__title--uppercase {
+	text-transform: uppercase;
 }
 
 .page-pagenavi .wp-pagenavi {
@@ -1151,21 +1151,21 @@ a {
 	width: 2.375rem;
 }
 
-.single-blog-content__prev-next a:first-child,
-.single-blog-content__prev-next a:last-child {
+.single-blog-content__prev-next .next,
+.single-blog-content__prev-next .prev {
 	margin: 0;
 }
 
-.single-blog-content__prev-next a:last-child {
+.single-blog-content__prev-next .next + .prev {
 	margin-left: 5.125rem;
 }
 
-.single-blog-content__prev-next a:first-child,
-.single-blog-content__prev-next a:last-child {
+.single-blog-content__prev-next .next,
+.single-blog-content__prev-next .prev {
 	position: relative;
 }
 
-.single-blog-content__prev-next a:first-child::before {
+.single-blog-content__prev-next .next::before {
 	content: "<";
 	left: 50%;
 	position: absolute;
@@ -1173,7 +1173,7 @@ a {
 	transform: translate(-50%, -50%);
 }
 
-.single-blog-content__prev-next a:last-child::after {
+.single-blog-content__prev-next .prev::after {
 	content: ">";
 	left: 50%;
 	position: absolute;
